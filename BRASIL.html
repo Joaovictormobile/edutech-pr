@@ -1,0 +1,35 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    //Bandeira do Brasil feito em HTML com pouco de javascript.
+    
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 600, 400);
+    pincel.fill();
+    
+  //primeiro triângulo:)
+    pincel.beginPath();
+    pincel.fillStyle = 'yellow';
+    pincel.moveTo(300, 80);
+    pincel.lineTo(80, 200);
+    pincel.lineTo(300, 300);
+    pincel.fill();
+    
+  //segundo triângulo
+  pincel.beginPath();
+  pincel.fillStyle = 'yellow';
+  pincel.moveTo(300, 80);
+  pincel.lineTo(300, 300);
+  pincel.lineTo(500, 200);
+  pincel.fill();
+    
+  // o ciculo
+
+    pincel.beginPath();
+    pincel.fillStyle = 'blue';
+    pincel.arc(300, 200, 50 , 0 , 2 * 3.14);
+    pincel.fill();
+</script>
